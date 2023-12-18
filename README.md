@@ -15,9 +15,14 @@ Before running the code in this repository, make sure you have the following pre
 
 * Enable the VertexAi API in GCP. See screen shot.
 
-* Install the gcloud CLI : 
+* Latest version of python is installed
 
-* Install python3 using
+* Install the gcloud CLI : See this <a href="https://cloud.google.com/sdk/docs/install"> link </a> for details.
+
+* Install the gcloud AI Platform for python:
+```
+pip3 install --upgrade --quiet google-cloud-aiplatform
+```
 
 
 ---
