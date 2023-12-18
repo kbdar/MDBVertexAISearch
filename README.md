@@ -1,8 +1,12 @@
 
 ## Electricity Consumption data visualization
 
-This demo demonstrates how you can use __MongoDB TIME SERIES collections__ to reduce your storage size for time series data using the electricity consumption as an example. Here is what the data size in my 2 collections looks like. The data size is small for me but you can interpolate it for millions of customers that an energy provider has and get an idea. In my case as you can see I have a reduction of 95% in data size and 90% in storage size
-<table><tr><td><img src='/image/comparison.png' alt=“” height="100" width="fit"></td></tr></table>
+This repository contains the procedure and the code files for generating plot embeddings using VertexAI Palm2 API, setting up an MonngoDB Atlas Search index, and performing the vectorSearch queries using a Python script.
+
+
+triggerfunction.js - JavaScript function that generates plot embeddings using OpenAI API and updates documents in a MongoDB collection with the embeddings.
+vectorIndex.json - JSON definition for setting up an Atlas Search index with the necessary configuration for the plot_embedding field.
+searchVertexAI.py - Python script to run queries against the MongoDB Atlas vector search index and data.
 
 
 ## Data Source
