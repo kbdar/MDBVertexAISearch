@@ -42,7 +42,7 @@ gcloud auth application-default login
 ```
 A webpage will open and you will be asked to login to your account. Login using the email you use on your GCP account as shown:
 
-<table><tr><td><img src='/images/gcloudlogin.png' alt=“” height="350" width="fit"></td></tr></table>
+<table><tr><td><img src='/images/login.png' alt=“” height="350" width="fit"></td></tr></table>
 Your application can now login and use your GCP resources which you have access to and have been enabled.
 
 __4. Generate embeddings__
