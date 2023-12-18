@@ -29,7 +29,7 @@ if __name__ == "__main__":
                         "$vectorSearch": {
                             "index":"default",
                             "queryVector": input_vector,
-                            "path": "plot_embedding_vertex",
+                            "path": "plot_embedding",
                             "numCandidates": 20,
                             "limit":5
                             },
