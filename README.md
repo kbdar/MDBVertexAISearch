@@ -1,8 +1,6 @@
-
 This sample repository contains the procedure and the code files for generating vector embeddings using VertexAI Palm2 API on data in a MongoDB collection (movies), setting up Atlas Search index on the vectorized data, and performing the vectorSearch queries using a Python script.
 
 #The code
-
 triggerfunction.js - JavaScript function that generates plot embeddings using OpenAI API and updates documents in a MongoDB collection with the embeddings.
 vectorIndex.json - JSON definition for setting up an Atlas Search index with the necessary configuration for the plot_embedding field.
 searchVertexAI.py - Python script to run queries against the MongoDB Atlas vector search index and data.
