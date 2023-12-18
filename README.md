@@ -1,13 +1,13 @@
-##This sample repository contains the procedure and the code files for generating vector embeddings using VertexAI Palm2 API on data in a MongoDB collection (movies), setting up Atlas Search index on the vectorized data, and performing the vectorSearch queries using a Python script.
+This sample repository contains the procedure and the code files for generating vector embeddings using VertexAI Palm2 API on data in a MongoDB collection (movies), setting up Atlas Search index on the vectorized data, and performing the vectorSearch queries using a Python script.
 We use the "textembedding-gecko@001" model part of the VertexAI to generate vector embeddings and store them in a MongoDB collection.
 
-#The code
-triggerfunction.js - JavaScript function that generates plot embeddings using OpenAI API and updates documents in a MongoDB collection with the embeddings.
-vectorIndex.json - JSON definition for setting up an Atlas Search index with the necessary configuration for the plot_embedding field.
-searchVertexAI.py - Python script to run queries against the MongoDB Atlas vector search index and data.
-settings.py : MongoDb Atlas cluster definitions and other settings needed by your python code. 
+# The code
+* **triggerfunction.js** - JavaScript function that generates plot embeddings using OpenAI API and updates documents in a MongoDB collection with the embeddings.
+* **vectorIndex.json** - JSON definition for setting up an Atlas Search index with the necessary configuration for the plot_embedding field.
+* **searchVertexAI.py** - Python script to run queries against the MongoDB Atlas vector search index and data.
+* **settings.py** : MongoDb Atlas cluster definitions and other settings needed by your python code. 
 
-#Pre-requisites
+# Pre-requisites
 Before running the code in this repository, make sure you have the following prerequisites:
 
 * MongoDB Atlas Cluster - Set up a MongoDB Atlas cluster where the sample_mflix database and movies collection exist. Replace the placeholders in the code with your actual database and collection names.
@@ -18,11 +18,16 @@ Before running the code in this repository, make sure you have the following pre
 
 * Latest version of python is installed
 
-* Install the gcloud CLI : See this <a href="https://cloud.google.com/sdk/docs/install"> link </a> for details.
-
-* Install the gcloud AI Platform for python:
+* Install pymongo:
 ```
-pip3 install --upgrade --quiet google-cloud-aiplatform
+pip3 install pymongo
+```
+
+* Install and intitialize the gcloud CLI : See this <a href="https://cloud.google.com/sdk/docs/install"> link </a> for details.
+
+* Install the gcloud AI Platform for python using the command below:
+```
+pip3 install google-cloud-aiplatform
 ```
 
 
