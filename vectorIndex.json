@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "dynamic": true,
+    "fields": {
+      "plot_embedding_vertex": {
+        "dimensions": 768,
+        "similarity": "cosine",
+        "type": "knnVector"
+      }
+    }
+  }
+}
